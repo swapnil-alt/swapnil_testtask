@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-SemiBold.ttf">
+            <string>NunitoSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="61" id="KGk-i7-Jjw" customClass="LayerTableWithImage" customModule="Kumele" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ag9-le-YSf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BarsWithoutBg" translatesAutoresizingMaskIntoConstraints="NO" id="09P-RF-5Mq">
+                                <rect key="frame" x="15" y="18.5" width="20" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="0lF-9i-7hF"/>
+                                    <constraint firstAttribute="width" constant="20" id="xpA-gT-sJQ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwX-Ng-70v">
+                                <rect key="frame" x="50" y="20.5" width="260" height="20.5"/>
+                                <fontDescription key="fontDescription" name="NunitoSans-SemiBold" family="Nunito Sans" pointSize="15"/>
+                                <color key="textColor" red="0.11764705882352941" green="0.16078431372549018" blue="0.19215686274509802" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="uwX-Ng-70v" firstAttribute="centerY" secondItem="Ag9-le-YSf" secondAttribute="centerY" id="Hnm-iV-Gd0"/>
+                            <constraint firstItem="uwX-Ng-70v" firstAttribute="leading" secondItem="09P-RF-5Mq" secondAttribute="trailing" constant="15" id="a2k-Wo-sBm"/>
+                            <constraint firstItem="09P-RF-5Mq" firstAttribute="centerY" secondItem="Ag9-le-YSf" secondAttribute="centerY" id="bID-sN-uuZ"/>
+                            <constraint firstItem="09P-RF-5Mq" firstAttribute="leading" secondItem="Ag9-le-YSf" secondAttribute="leading" constant="15" id="eSS-yR-oLl"/>
+                            <constraint firstAttribute="trailing" secondItem="uwX-Ng-70v" secondAttribute="trailing" constant="10" id="pdo-Pq-64u"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ag9-le-YSf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="8fC-o2-81J"/>
+                    <constraint firstItem="Ag9-le-YSf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="QgE-ID-Gem"/>
+                    <constraint firstAttribute="bottom" secondItem="Ag9-le-YSf" secondAttribute="bottom" id="emg-eN-4cG"/>
+                    <constraint firstAttribute="trailing" secondItem="Ag9-le-YSf" secondAttribute="trailing" id="f0D-cg-RyE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgItem" destination="09P-RF-5Mq" id="vUG-Xc-EN8"/>
+                <outlet property="lblName" destination="uwX-Ng-70v" id="GEt-yk-JLr"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="107.47767857142857"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="BarsWithoutBg" width="22" height="25.5"/>
+    </resources>
+</document>

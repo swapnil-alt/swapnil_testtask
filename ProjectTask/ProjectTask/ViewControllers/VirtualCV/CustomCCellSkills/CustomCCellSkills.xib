@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-SemiBold.ttf">
+            <string>Inter-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CustomCCellSkills" id="gTV-IL-0wX" customClass="CustomCCellSkills" customModule="ProjectTask" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="144" height="40"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="144" height="40"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eAb-A1-xNU" customClass="UIViewClass" customModule="ProjectTask" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="5" width="139" height="30"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wkx-RL-vMd">
+                                <rect key="frame" x="15" y="8" width="109" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="fW8-EF-rD4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="wkx-RL-vMd" secondAttribute="trailing" constant="15" id="3xV-lt-THJ"/>
+                            <constraint firstItem="wkx-RL-vMd" firstAttribute="top" secondItem="eAb-A1-xNU" secondAttribute="top" constant="8" id="4yW-m5-LBw"/>
+                            <constraint firstItem="wkx-RL-vMd" firstAttribute="leading" secondItem="eAb-A1-xNU" secondAttribute="leading" constant="15" id="cs2-2l-haJ"/>
+                            <constraint firstAttribute="height" constant="30" id="fGi-xT-Rx8"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffSet">
+                                <size key="value" width="1" height="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="firstBackgroundColor">
+                                <color key="value" red="0.57647058819999997" green="0.66274509800000003" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="eAb-A1-xNU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="IKS-V5-teS"/>
+                <constraint firstAttribute="trailing" secondItem="eAb-A1-xNU" secondAttribute="trailing" constant="5" id="XTi-nn-cto"/>
+                <constraint firstItem="eAb-A1-xNU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="YNi-uO-2Fl"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="144" height="50"/>
+            <connections>
+                <outlet property="lblTitle" destination="wkx-RL-vMd" id="QYi-RA-fye"/>
+            </connections>
+            <point key="canvasLocation" x="-48" y="79"/>
+        </collectionViewCell>
+    </objects>
+</document>
